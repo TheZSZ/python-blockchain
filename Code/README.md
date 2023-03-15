@@ -1,8 +1,3 @@
-# CPRBlockchain
-Blockchain Group Assignment for CSE242  
-Daniel, Matt, Steven, and Zee  
-
-
 ## Usage: 
 Run `bash run.sh`
 
@@ -34,7 +29,6 @@ as well as return the balance.
 2)  Check bad blocks better method
 3)  What are we printing out? and how we outputting it
 
-## Homework 5 Description:
 ## Validate Block
 We took the contents of the output folder (output) and rebuild the tree with the 30 addresses and balances. If the merkle tree matches the output folder, then a validation is made. The merkle root contains a single hash that can validate every single transaction hash in the block, so if the block hash deviates from the merkle root while using the build_tree() method. If there is a single transaction in the output files which does not match from the input files, the merkle root created from that block will be different from the input files, so therefore it will be invalid. 
 
@@ -50,7 +44,7 @@ the get_balance method finds the balance of a transaction inside a block by trav
 ## Proof of Membership
 We verified for proof of membership by making sure that each block in the blockchain fails if one block hash is modified in any way. Basically, by using the validation method discussed above, and validating the blockchain, every node can contribute to the blockchain. 
 
-## Running Application for Homework 5
+## Running Application
 
 1. In the root folder, run with bash run.sh
 2. Select either 1 or 2 to run either all txt files or a single txt file
